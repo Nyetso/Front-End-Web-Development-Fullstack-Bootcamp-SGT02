@@ -1,3 +1,6 @@
 Harris
 Sushi
 yellow
+
+Exercise01
+Added Color
