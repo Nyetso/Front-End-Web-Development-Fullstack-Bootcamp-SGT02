@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-direction: row; */ /*change the dircetion of the flex items*/
+            align-items: center; /*arranging the items in the container. START, CENTER, END,STRETCH || CROSS AXIS*/
+            justify-content: space-evenly; /*arranging the items in the container. START, CENTER, END, SPACE-BETWEEN, SPACE-AROUND, SPACE EVENLY || MAIN AXIS*/
+        }
+        .flex-item {
+            background-color: #dda5a5;
+            padding: 10px;
+            margin: 5px;
+        }
+        .unique {
+            height: 100px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+            justify-content: space-between;
+        }.navbar ul {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">My Website</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item unique">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html>

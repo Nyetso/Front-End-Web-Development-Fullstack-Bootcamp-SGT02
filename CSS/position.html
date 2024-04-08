@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .static {
+            position: static;
+            background-color: lightblue;
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .relative {
+            position: relative;
+            background-color: lightgreen;
+            width: 200px;
+            padding: 10px;
+            margin-right: 10px;
+
+            /* POSITIONING PROPERTIES */
+            /* top, right, bottom, right */
+            /* top: 20px;
+            right: -20px; */
+        }
+        .absolute {
+            position: absolute;
+            background-color: lightyellow;
+            width: 150px;
+            padding: 10px;
+
+            /* POSITIONING PROPERTIES */
+            /* top, right, bottom, right */
+            bottom: 0px;
+        }
+        .fixed {
+            position: fixed; /*always will display on the screen even if we scroll*/
+            background-color: lightpink;
+            width: 200px;
+            padding: 10px;
+
+            /* POSITIONING PROPERTIES */
+            /* top, right, bottom, right */
+            bottom: 200px;
+        }
+        .sticky {
+            position: sticky; /*follow scrolling but will stick on the screen when the position is disturbed*/
+            background-color: lightseagreen;
+            width: 200px;
+            padding: 10px;
+
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positioning Elements Example</h1>
+
+    <div class="static">Static Position</div>
+    <div class="relative">Relative Position</div>
+    <br><br>
+    <br><br>
+    <div class="relative">
+        <div class="absolute">Relative & Absolute Position</div>
+    </div>
+    <div class="absolute">Absolute Position</div>
+    <div class="fixed">Fixed Position</div>
+    <div class="sticky">Sticky Position</div>
+</body>
+</html>

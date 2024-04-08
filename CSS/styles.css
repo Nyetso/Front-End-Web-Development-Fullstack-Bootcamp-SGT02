@@ -1,0 +1,68 @@
+/* universal selector */
+* {
+    color:rgba(122, 25, 70, 0.349);
+}
+
+
+/* element selector */
+p {
+    color:blue;
+}
+
+
+/* class selector */
+.para1 {
+    color:green;
+}
+.box {
+    background-color: black;
+}
+
+
+/* id selector */
+#para2 {
+    color:blueviolet;
+}
+#one{
+    color:white;
+}
+#two {
+    color:rgb(189, 136, 136);
+}
+#three {
+    color:rgb(187, 186, 124);
+}
+
+
+/* attribute selector */
+[href]{
+    color:rgb(47, 14, 99);
+}
+a[href="www.example1.com"]{
+    color:brown
+}
+
+/* Grouping Selector */
+.parag1,
+#parag2,
+h4 {
+  font-size: 20px;
+  background-color: bisque;
+}
+
+/* Pseudo classes */
+h5:hover{
+    background-color: aqua;
+    color:blueviolet;
+}
+
+/* Pseudo elements */
+h1::first-letter{
+    color:brown;
+}
+h1::before {
+    content: "Before :   ->";
+}
+h1::after {
+    content: "->   After";
+}
