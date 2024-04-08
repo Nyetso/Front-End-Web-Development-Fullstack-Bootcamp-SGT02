@@ -1,0 +1,22 @@
+.bg {
+    background-image: url("/Exercise03/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2, footer {
+    color:rgb(238, 130, 238)
+}
+
+.tr1 {
+    color:rgb(182, 238, 130)
+}
+
+.tr2 {
+    color:rgb(231, 227, 174)
+}
+
+ul {
+    color:rgb(231, 227, 174)
+}
