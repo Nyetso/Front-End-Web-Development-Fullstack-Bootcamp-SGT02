@@ -5,31 +5,91 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website</title>
         <link rel="stylesheet" href="styling.css">
+        <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }.navbar ul {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        .shadow {
+            text-shadow: 5px 5px 5px black;
+        }
+        .body-details {
+            display: flex;
+            background: linear-gradient(
+                90deg,
+            rgb(78, 2, 2) 0%, 
+            rgb(184, 28, 28) 60%,
+            rgb(202, 107, 107) 80%, 
+            rgb(224, 191, 191) 100%
+            );
+            align-items: center;
+            justify-content: space-between;
+        }
+        .img {
+            border: 2px solid grey;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .img-relative {
+            position: relative;
+            margin-right: 10px;
+            top: 30px;
+            right: 20px;
+        }
+        .details-relative {
+            position: relative;
+            margin-left: 10px;
+            left: 20px;
+        }
+        .footer {
+            position: absolute;
+            background-color: antiquewhite;
+            padding: 10px;
+            width: 100%;
+
+            /* POSITIONING PROPERTIES */
+            /* top, right, bottom, right */
+            bottom: 0px;
+        }
+        </style>
     </head>
 
 
-    <body class="bg">
-        <table border="1">
-            <thead>
-                <h1><u>My Portfolio</u></h1>
-            </thead>
-            <tbody>
-                <tr class="tr1">
-                    <td><b>Name</b></td>
-                    <td><b>Age</b></td>
-                    <td><b>Date Of Birth</b></td>
-                    <td><b>Location</b></td>
-                </tr>
-                <tr class="tr2">
-                    <td>Harris Nazman</td>
-                    <td>32</td>
-                    <td>30 September 1992</td>
-                    <td>Malaysia</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <br>
+    <body>
+        <div class="navbar shadow">
+            <a href="#">My Website</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="body-details shadow">
+            <span class="details-relative">
+                <a style="color: antiquewhite">HEY THERE!</a><br>
+                <a style="color: antiquewhite">I AM <strong>HARRIS</strong></a><br>
+                <a style="color: antiquewhite">Wanted to know more ? 
+                    <a href="#">About Me</a>
+                </a><br>
+            </span>
+            <span class="img img-relative">
+                <img src="/Exercise04/img/picture.png" width="200" alt="Error Image">
+            </span>
+        </div>
+
 
         <h1>What I Do:</h1>
         <nav>
@@ -45,8 +105,8 @@
         <br>
 
         <!-- Footer -->
-        <footer>
-            <h2><u>Thank You For Visiting My Website</u></h2>
+        <footer class="footer">
+            <h3>Thank You For Visiting My Website</h3>
         </footer>
     </body>
 </html>
